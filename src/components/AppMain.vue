@@ -5,7 +5,8 @@
 
 import AppHeroSectionVue from './Main components/AppHeroSection.vue';
 import AppCardSection from './Main components/AppCardSection.vue';
-import AppShortSectionVue from './Main components/AppShortSection.vue';
+import AppWorkingProgressSection from './Main components/AppWorkingProgressSection.vue';
+import AppMessageSection from './Main components/AppMessageSection.vue'
 
 
 
@@ -20,7 +21,7 @@ export default{
   },
  
 
-  components: {AppHeroSectionVue, AppCardSection, AppShortSectionVue},
+  components: {AppHeroSectionVue, AppCardSection, AppWorkingProgressSection, AppMessageSection},
 
 
 };
@@ -34,7 +35,8 @@ export default{
 
     <AppHeroSectionVue></AppHeroSectionVue>
     <AppCardSection></AppCardSection>
-    <AppShortSectionVue></AppShortSectionVue>
+    <AppWorkingProgressSection></AppWorkingProgressSection>
+    <AppMessageSection></AppMessageSection>
     
     
     
