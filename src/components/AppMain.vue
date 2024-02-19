@@ -4,6 +4,7 @@
 <script >
 
 import AppHeroSectionVue from './Main components/AppHeroSection.vue';
+import AppCardSection from './Main components/AppCardSection.vue';
 
 export default{
   data(){
@@ -15,7 +16,7 @@ export default{
   },
  
 
-  components: {AppHeroSectionVue},
+  components: {AppHeroSectionVue, AppCardSection},
 
 
 };
@@ -28,6 +29,8 @@ export default{
 <template>
 
     <AppHeroSectionVue></AppHeroSectionVue>
+    <AppCardSection></AppCardSection>
+    
  
 
 </template>
@@ -37,7 +40,7 @@ export default{
 
 
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 
 
