@@ -35,13 +35,22 @@ export default{
    
            </div>
            <div class="descripion">
+            <p class="p-2">maree.qode@gmail.com</p>
+            <p class="p-2">+44645321789</p>
+           </div>
+           <div class="descripion">
+            <p class="p-2">Avenue d'Auderghem 10</p>
+            <p class="p-2">1040 Brussels, Belgium</p>
    
            </div>
            <div class="descripion">
-   
-           </div>
-           <div class="descripion">
-   
+            <p class="p-2 ">Stay in Touch with us </p>
+                <ul>
+                    <li><font-awesome-icon :icon="['fab', 'twitter']" /></li>
+                    <li><font-awesome-icon :icon="['fab', 'pinterest-p']" /></li>
+                    <li><font-awesome-icon :icon="['fab', 'facebook-f']" /></li>
+                    <li><font-awesome-icon :icon="['fas', 'info']" /></li>
+                </ul>
            </div>
        </div>
    </div>
@@ -63,9 +72,10 @@ export default{
         .container{
     
             display: flex;
+            justify-content: space-between;
 
             .descripion{
-                
+                width: 20%;
             }
     
         }
