@@ -5,6 +5,10 @@
 
 import AppHeroSectionVue from './Main components/AppHeroSection.vue';
 import AppCardSection from './Main components/AppCardSection.vue';
+import AppShortSectionVue from './Main components/AppShortSection.vue';
+
+
+
 
 export default{
   data(){
@@ -16,7 +20,7 @@ export default{
   },
  
 
-  components: {AppHeroSectionVue, AppCardSection},
+  components: {AppHeroSectionVue, AppCardSection, AppShortSectionVue},
 
 
 };
@@ -30,6 +34,9 @@ export default{
 
     <AppHeroSectionVue></AppHeroSectionVue>
     <AppCardSection></AppCardSection>
+    <AppShortSectionVue></AppShortSectionVue>
+    
+    
     
  
 

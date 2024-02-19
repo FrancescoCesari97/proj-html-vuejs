@@ -48,7 +48,7 @@ export default{
 
 
 
-<style lang="scss">
+<style scoped lang="scss">
 
 
 

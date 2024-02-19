@@ -121,7 +121,7 @@ export default{
             .leaves-3{
                 position: absolute;
                 bottom: 259px;
-                right: -289px;
+                right: -324px;
                 width: 30%;
             }
             .leaves-4{
@@ -144,7 +144,7 @@ export default{
             .leaves-7{
                 position: absolute;
                 bottom: 274px;
-                right: 119px;
+                right: 177px;
                 width: 25%;
                 transform: rotate(-15deg);
             }

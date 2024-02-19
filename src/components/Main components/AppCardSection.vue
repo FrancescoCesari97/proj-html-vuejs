@@ -87,6 +87,7 @@ export default{
   .card{
     border-radius: 0;
     margin: 0;
+    border: 0;
     width: calc(100% / 3);
     position: relative;
 
