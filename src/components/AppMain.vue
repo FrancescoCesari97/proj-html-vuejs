@@ -3,7 +3,7 @@
 
 <script >
 
-
+import AppHeroSectionVue from './Main components/AppHeroSection.vue';
 
 export default{
   data(){
@@ -15,6 +15,8 @@ export default{
   },
  
 
+  components: {AppHeroSectionVue},
+
 
 };
 </script>
@@ -24,6 +26,8 @@ export default{
 
 
 <template>
+
+    <AppHeroSectionVue></AppHeroSectionVue>
  
 
 </template>
