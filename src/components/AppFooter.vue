@@ -3,6 +3,7 @@
 
 <script >
 
+import AppBottomBar from './Footer components/AppBottomBar.vue';
 
 
 export default{
@@ -14,6 +15,7 @@ export default{
 
   },
  
+  components:{ AppBottomBar }
 
 
 };
@@ -24,6 +26,9 @@ export default{
 
 
 <template>
+
+
+  <AppBottomBar></AppBottomBar>
  
 
 </template>

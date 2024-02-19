@@ -7,7 +7,7 @@ import AppHeroSectionVue from './Main components/AppHeroSection.vue';
 import AppCardSection from './Main components/AppCardSection.vue';
 import AppWorkingProgressSection from './Main components/AppWorkingProgressSection.vue';
 import AppMessageSection from './Main components/AppMessageSection.vue'
-
+import AppOptionSection from './Main components/AppOptionSection.vue';
 
 
 
@@ -21,7 +21,7 @@ export default{
   },
  
 
-  components: {AppHeroSectionVue, AppCardSection, AppWorkingProgressSection, AppMessageSection},
+  components: {AppHeroSectionVue, AppCardSection, AppWorkingProgressSection, AppMessageSection, AppOptionSection},
 
 
 };
@@ -37,6 +37,7 @@ export default{
     <AppCardSection></AppCardSection>
     <AppWorkingProgressSection></AppWorkingProgressSection>
     <AppMessageSection></AppMessageSection>
+    <AppOptionSection></AppOptionSection>
     
     
     
