@@ -8,8 +8,19 @@
 export default{
   data(){
     return{
-     
+      
+      imgFullCrad:[
+        
+        "/assets/img/h-2-port-img-1.jpg",
+        "/assets/img/h-2-port-img-2.jpg",
+        "/assets/img/h-2-port-img-3.jpg",
+        "/assets/img/h-2-port-img-4.jpg",
+        "/assets/img/h-2-port-img-5.jpg",
+        "/assets/img/h-2-port-img-6.jpg",
+      ]
+      
     };
+
 
 
   },
@@ -26,10 +37,11 @@ export default{
 <template>
 
     <div class="cards">
-        <div class="card">
-          <img src="../assets/img/h-2-port-img-1.jpg" alt="">
+        <div v-for="(img, index) in imgFullCrad" class="card"
+          v-show="index = 2 ">
+          <img :src="img" alt="">
         </div>
-        <div class="card">
+        <!-- <div class="card">
           <img src="../assets/img/h-2-port-img-2.jpg" alt="">
         </div>
         <div class="card">
@@ -62,7 +74,7 @@ export default{
             
             <img src="../assets/svg/svg-2.svg" alt="">
           </div>
-        </div>
+        </div> -->
        
     </div>
    
