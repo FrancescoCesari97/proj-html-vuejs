@@ -124,10 +124,10 @@ export default{
         margin-right: 30px;
 
         h2{
-            font-size: 3.5rem;
+            font-size: 4rem;
             .grassetto{
                 font-family: "Playball" ;
-                font-size: 4.5rem;
+                font-size: 4.7rem;
                 font-weight: 500;
                 
             }
@@ -138,8 +138,13 @@ export default{
         }
         .bottone{
             border: 2px solid #e1c0b0;
+            border-radius: 0;
+            padding: 10px 30px;
             P{
                 color: black;
+                font-size: 0.7rem;
+                letter-spacing: 2px;
+                font-weight: 700;
             }
         }
       }

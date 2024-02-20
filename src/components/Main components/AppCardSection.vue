@@ -11,12 +11,19 @@ export default{
       
       imgFullCrad:[
         
+        
         "/assets/img/h-2-port-img-1.jpg",
+     
         "/assets/img/h-2-port-img-2.jpg",
+     
         "/assets/img/h-2-port-img-3.jpg",
+      
         "/assets/img/h-2-port-img-4.jpg",
+      
         "/assets/img/h-2-port-img-5.jpg",
+      
         "/assets/img/h-2-port-img-6.jpg",
+      
       ]
       
     };
@@ -37,8 +44,35 @@ export default{
 <template>
 
     <div class="cards">
-        <div v-for="(img, index) in imgFullCrad" class="card">
-          <img :src="img" alt="">
+        <div v-for="(imgage, index) in imgFullCrad" class="card">
+          <img :src="imgage" alt="">
+
+          <div v-if="index == 2">
+            
+            <div class="small-icon-shop">
+              
+              <img src="../assets/svg/svg-6.svg" alt="">
+            </div>
+            <div class="small-icon-circle">
+              
+              <img src="../assets/svg/svg-4.svg" alt="">
+            </div>
+          </div>
+
+          <div v-if="index == 5">
+            <div class="small-icon-top-arrow">
+              
+            <img src="../assets/svg/svg-2.svg" alt="">
+            </div>
+            <div class="small-icon-bottom-arrow">
+              
+              <img src="../assets/svg/svg-2.svg" alt="">
+            </div>
+
+          </div>
+
+
+          
         </div>
         <!-- <div class="card">
           <img src="../assets/img/h-2-port-img-2.jpg" alt="">

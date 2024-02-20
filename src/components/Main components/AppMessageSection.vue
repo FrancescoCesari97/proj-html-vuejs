@@ -77,6 +77,10 @@ export default{
                 padding: 10px 30px;
                 
             }
+
+            .btn:hover{
+                background-color: #e1c0b0;
+            }
         }
     }
 

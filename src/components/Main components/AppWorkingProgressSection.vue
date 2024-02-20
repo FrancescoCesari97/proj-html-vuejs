@@ -89,14 +89,14 @@ export default{
         .linea-rossa{
                 position:absolute;
                 left: 210px;
-                top: 124px;
+                top: 180px;
                 z-index: 1;
                 width: 65%;
                 
             }
         
         h3{
-          
+            padding: 0 0 50px 0;
             font-size: 3rem;
             span{
                 font-family: "Playball" ;
