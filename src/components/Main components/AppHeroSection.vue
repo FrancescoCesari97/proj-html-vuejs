@@ -66,10 +66,10 @@ export default{
 <template>
     <div class="container py-3">
         <div class="testo-hero py-5">
-            <h2>Devotion that never ends</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique exercitationem magnam repellat! Earum nihil voluptate necessitatibus modi, facere non minus excepturi aspernatur rem dolores quisquam molestiae ipsam magni illo placeat.</p>
-            <button class="btn bottone ">
-                READ MORE
+            <h2>Devotion that never <span class="grassetto">ends</span></h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique exercitationem magnam repellat! </p>
+            <button class="btn bottone my-2 ">
+                <p>READ ME</p>
             </button>
 
         </div>
@@ -125,13 +125,22 @@ export default{
 
         h2{
             font-size: 3.5rem;
+            .grassetto{
+                font-family: "Playball" ;
+                font-size: 4.5rem;
+                font-weight: 500;
+                
+            }
         }
         p{
-            font-size: 13px;
+            font-size: 14px;
             color: rgba(0, 0, 0, 0.484);
         }
         .bottone{
             border: 2px solid #e1c0b0;
+            P{
+                color: black;
+            }
         }
       }
 

@@ -24,16 +24,16 @@ export default{
 
 <div class="container py-5">
 
-    <h3 class="text-center"> Working Process</h3>
+    <h3 class="text-center"> Working <span>process</span></h3>
     <div class="linea-rossa">
 
         <img src="../assets/svg/svg-3.svg" alt="">
     </div>
 
     <div class="wrapper">
-        <div class="card">
-            <div class="circle-icon text-center ">
-                <font-awesome-icon class=" icon" :icon="['far', 'lightbulb']" size="2xl" />
+        <div class="card ">
+            <div class="circle-icon  ">
+                <font-awesome-icon class="  icon" :icon="['far', 'lightbulb']" size="2xl" />
             </div>
             <h4 class="text-center my-3">First theres an idea</h4>
             <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
@@ -44,7 +44,7 @@ export default{
             <div class="circle-icon messaggio">
                 <font-awesome-icon :icon="['far', 'comment']" size="2xl" />
             </div>
-            <h4 class="text-center my-3">First theres an idea</h4>
+            <h4 class="text-center my-3">Then we talk about</h4>
             <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             </p>
         </div>
@@ -53,7 +53,7 @@ export default{
             <div class="circle-icon nuvola ">
                 <font-awesome-icon :icon="['fas', 'cloud']" size="2xl" />
             </div>
-            <h4 class="text-center my-3">First theres an idea</h4>
+            <h4 class="text-center my-3">And we think About</h4>
             <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             </p>
         </div>
@@ -62,7 +62,7 @@ export default{
             <div class="circle-icon penna">
                 <font-awesome-icon :icon="['fas', 'pen-fancy']"  size="2xl" />
             </div>
-            <h4 class="text-center my-3">First theres an idea</h4>
+            <h4 class="text-center my-3">So we draw along</h4>
             <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             </p>
         </div>
@@ -87,16 +87,22 @@ export default{
 
 
         .linea-rossa{
-                position: absolute;
-                left: 10px;
-                top: 10px;
-                
+                position:absolute;
+                left: 210px;
+                top: 124px;
+                z-index: 1;
+                width: 65%;
                 
             }
         
         h3{
           
             font-size: 3rem;
+            span{
+                font-family: "Playball" ;
+                font-size: 4rem;
+                font-weight: 500;
+            }
             
         }
         .wrapper{
@@ -108,6 +114,10 @@ export default{
             .card{
                 border: 0;
                 width: 25%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                z-index: 0;
             
                 h4{
                     font-size: 1rem;
@@ -125,7 +135,9 @@ export default{
                     height: 100px;
                     padding: 20px;
                     color: #badac9 ;
-                    margin: auto;
+                    z-index: 2;
+                    position: relative;
+                    
                     display: flex;
                     align-items: center;
                     justify-content: center;

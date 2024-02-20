@@ -37,8 +37,7 @@ export default{
 <template>
 
     <div class="cards">
-        <div v-for="(img, index) in imgFullCrad" class="card"
-          v-show="index = 2 ">
+        <div v-for="(img, index) in imgFullCrad" class="card">
           <img :src="img" alt="">
         </div>
         <!-- <div class="card">

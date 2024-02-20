@@ -74,12 +74,23 @@ export default{
         border-radius: 0;
         position: relative;
 
+        h5{
+            margin: 0;
+        }
+
+        p{
+            font-size: 0.8rem;
+        }
+
         .targ{
             position: absolute;
             top: -20px;
             left: 20px;
             .giorno{
                 background-color: #c0e1cf ;
+                font-family: "Playball" ;
+                font-weight: 500;
+                font-size: 2rem;
             }
 
             .anno{

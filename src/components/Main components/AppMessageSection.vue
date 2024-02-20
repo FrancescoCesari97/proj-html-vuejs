@@ -26,7 +26,7 @@ export default{
 <div class="background">
 
     <div class="container  text-center">
-        <h2>Want to work with us? Send us a message!</h2>
+        <h2>Want to work with us? Send us <span>a message!</span> </h2>
 
         <p class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos incidunt harum, nisi error atque voluptate nemo repellat sapiente ducimus eligendi inventore id ad, iste officiis aspernatur architecto magnam accusamus cumque.</p>
 
@@ -57,6 +57,12 @@ export default{
             h2{
                 font-size: 2.5rem;
                 padding-top: 50px;
+
+                span{
+                    font-family: "Playball" ;
+                    font-size: 3.5rem;
+                    font-weight: 500;
+                }
             }
 
             p{
