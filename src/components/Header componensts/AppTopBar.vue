@@ -9,6 +9,21 @@ export default{
   data(){
     return{
      
+
+      links:[
+        'Home',
+
+        'Pages',
+
+        'Portfolio',
+
+        'Blog',
+
+        'Shop',
+
+        'Element',
+     
+      ]
     };
 
 
@@ -28,12 +43,8 @@ export default{
     <img src="../assets/img/logo-sidearea-1.png" alt="">
 
     <ul class="my-0">
-        <li>Home</li>
-        <li>Pages</li>
-        <li>Portfolio</li>
-        <li>Blog</li>
-        <li>Shop</li>
-        <li>Element</li>
+        <li v-for="(link) in links ">{{ link }}</li>
+      
         <li><img src="../assets/svg/svg-1.svg" alt=""></li>
     </ul>
 </div>
