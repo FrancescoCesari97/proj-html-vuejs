@@ -12,7 +12,13 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 /* import specific icons */
-import { faCloud, faPenFancy, faInfo } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCloud,
+  faPenFancy,
+  faInfo,
+  faArrowLeft,
+  faArrowRight,
+} from "@fortawesome/free-solid-svg-icons";
 import { faLightbulb, faComment } from "@fortawesome/free-regular-svg-icons";
 import {
   faTwitter,
@@ -29,7 +35,9 @@ library.add(
   faTwitter,
   faPinterestP,
   faFacebookF,
-  faInfo
+  faInfo,
+  faArrowLeft,
+  faArrowRight
 );
 
 const app = createApp(App);

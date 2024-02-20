@@ -25,13 +25,13 @@ export default{
 <div class="container py-5">
 
     <h3 class="text-center"> Working <span>process</span></h3>
+    
     <div class="linea-rossa">
 
         <img src="../assets/svg/svg-3.svg" alt="">
     </div>
-
     <div class="wrapper">
-        <div class="card ">
+        <div class="icona ">
             <div class="circle-icon  ">
                 <font-awesome-icon class="  icon" :icon="['far', 'lightbulb']" size="2xl" />
             </div>
@@ -40,7 +40,7 @@ export default{
             </p>
         </div>
 
-        <div class="card">
+        <div class="icona">
             <div class="circle-icon messaggio">
                 <font-awesome-icon :icon="['far', 'comment']" size="2xl" />
             </div>
@@ -49,7 +49,7 @@ export default{
             </p>
         </div>
 
-        <div class="card">
+        <div class="icona">
             <div class="circle-icon nuvola ">
                 <font-awesome-icon :icon="['fas', 'cloud']" size="2xl" />
             </div>
@@ -58,7 +58,7 @@ export default{
             </p>
         </div>
 
-        <div class="card">
+        <div class="icona">
             <div class="circle-icon penna">
                 <font-awesome-icon :icon="['fas', 'pen-fancy']"  size="2xl" />
             </div>
@@ -111,7 +111,7 @@ export default{
             position: relative;
 
 
-            .card{
+            .icona{
                 border: 0;
                 width: 25%;
                 display: flex;

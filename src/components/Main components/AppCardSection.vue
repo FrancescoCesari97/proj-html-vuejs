@@ -31,6 +31,18 @@ export default{
 
 
   },
+
+  methods:{
+
+
+    BookDetailed(){
+       
+    }
+
+
+
+
+  }
  
 
 
@@ -45,34 +57,13 @@ export default{
 
     <div class="cards">
         <div v-for="(imgage, index) in imgFullCrad" class="card">
-          <img :src="imgage" alt="">
+          <img class="icon" :src="imgage" alt="">
 
-          <div v-if="index == 2">
-            
-            <div class="small-icon-shop">
-              
-              <img src="../assets/svg/svg-6.svg" alt="">
-            </div>
-            <div class="small-icon-circle">
-              
-              <img src="../assets/svg/svg-4.svg" alt="">
-            </div>
+          <div class="targ">
+            <h4>Illustrations of novels</h4>
+            <p>Illustration</p>
           </div>
 
-          <div v-if="index == 5">
-            <div class="small-icon-top-arrow">
-              
-            <img src="../assets/svg/svg-2.svg" alt="">
-            </div>
-            <div class="small-icon-bottom-arrow">
-              
-              <img src="../assets/svg/svg-2.svg" alt="">
-            </div>
-
-          </div>
-
-
-          
         </div>
         <!-- <div class="card">
           <img src="../assets/img/h-2-port-img-2.jpg" alt="">
@@ -128,6 +119,18 @@ export default{
     display: flex;
     flex-wrap: wrap;
   }
+  .targ{
+    position: absolute;
+    top: 200px;
+    background-color: rgb(248, 251, 249);
+    padding: 15px;
+    transform: translateX(500%);
+    transition: 300ms ease-in-out;
+  }
+
+  .card:hover .targ{
+    transform: translateX(0%);
+  }
 
   .card{
     border-radius: 0;
@@ -135,6 +138,9 @@ export default{
     border: 0;
     width: calc(100% / 3);
     position: relative;
+
+   
+
 
     .small-icon-shop{
       position: absolute;

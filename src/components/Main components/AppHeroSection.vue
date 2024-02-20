@@ -13,6 +13,8 @@ export default{
       
         '/assets/img/h-2-slider-img-15.png',
         '/assets/img/h-2-slider-img-16.png',
+        '/assets/img/h-2-slider-img-11.png',
+        '/assets/img/short-slider-rev-1-img-3.png'
 
         
         ],
@@ -46,14 +48,38 @@ export default{
             img:"/assets/img/short-slider-rev-1-img-2.png",
             class:'leaves-7'
         },
-        ]
+        ],
      
-     
+        
+        activeImg: 0,
     };
+    },
+
+    computed:{
+      activeImage() {
+      return this.imgHeroPeople[this.activeImg];
+    },
+    },
 
 
-  },
- 
+    methods:{
+        nextArrow() {
+      if (this.activeImg >= this.imgHeroPeople.length - 1) {
+        this.activeImg = 0;
+      } else {
+        this.activeImg++;
+      }
+    },
+
+    prevArrow() {
+      if (this.activeImg == 0) {
+        this.activeImg = this.imgHeroPeople.length - 1;
+      } else {
+        this.activeImg--;
+      }
+    },
+
+    }
 
 
 };
@@ -76,7 +102,7 @@ export default{
 
         <div class="img-hero">
             <div class="main-img">
-                <img v-for="(img) in imgHeroPeople" :src="img" alt="">
+                <img  v-bind:src="activeImage" class="slide active">
                 
                 
             </div>
@@ -101,6 +127,20 @@ export default{
 
         </div>
     </div>
+
+    <!-- freccia prev -->
+    <div @click="prevArrow()" class="arrow-prev bordered" >
+        <font-awesome-icon :icon="['fas', 'arrow-left']" />
+                    
+    
+    </div>
+
+    <!-- freccia next  -->
+    <div @click="nextArrow()" class="arrow-next bordered"  >
+        <font-awesome-icon :icon="['fas', 'arrow-right']" />
+                
+    
+    </div>
  
 
 </template>
@@ -111,6 +151,8 @@ export default{
 
 
 <style scoped lang="scss">
+
+
 
     
 
@@ -207,6 +249,32 @@ export default{
       }
     
 
+    }
+    .arrow-prev,
+    .arrow-next{
+        color: rgb(222, 206, 39);
+        width: 50px;
+        height: 50px;
+
+        position: absolute;
+        top: 20%;
+        transform: translateY(-50%);
+        line-height: 50px;
+        text-align: center;
+        font-size: 1.3rem;
+
+        background-color: rgba(250, 235, 215, 0.453);
+        border-radius: 50%;
+
+        cursor: pointer;
+    }
+
+    .arrow-next{
+        right: 20px;
+    }
+
+    .arrow-prev{
+        left: 20px;
     }
 
 

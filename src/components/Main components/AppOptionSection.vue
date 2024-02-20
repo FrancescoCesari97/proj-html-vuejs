@@ -87,6 +87,7 @@ export default{
 
         p{
             font-size: 0.8rem;
+            font-family:"Playball" ;
         }
 
         .targ{
