@@ -8,6 +8,46 @@
 export default{
   data(){
     return{
+
+        imgHeroPeople:[
+      
+        '/assets/img/h-2-slider-img-15.png',
+        '/assets/img/h-2-slider-img-16.png',
+
+        
+        ],
+
+        imgHeroLeaves:[
+        {
+            img:"/assets/img/h-2-slider-img-12.png",
+            class:'leaves-1'
+        },
+        {
+            img:"/assets/img/h-2-slider-img-13.png",
+            class:'leaves-2'
+        },
+        {
+            img:"/assets/img/h-2-slider-img-14.png",
+            class:'leaves-3'
+        },
+        {
+            img:"/assets/img/h-2-slider-img-17.png",
+            class:'leaves-4'
+        },
+        {
+            img:"/assets/img/h-2-slider-img-18.png",
+            class:'leaves-5'
+        },
+        {
+            img:"/assets/img/short-slider-rev-1-img-2.png",
+            class:'leaves-6'
+        },
+        {
+            img:"/assets/img/short-slider-rev-1-img-2.png",
+            class:'leaves-7'
+        },
+        ]
+     
      
     };
 
@@ -36,19 +76,20 @@ export default{
 
         <div class="img-hero">
             <div class="main-img">
-                <img src="../assets/img/h-2-slider-img-15.png" alt="">
-                <img src="../assets/img/h-2-slider-img-16.png" alt="">
+                <img v-for="(img) in imgHeroPeople" :src="img" alt="">
+                
+                
             </div>
 
             <div class="leaves-img">
-                <img class="leaves-1" src="../assets/img/h-2-slider-img-12.png" alt="">
-                <img class="leaves-2" src="../assets/img/h-2-slider-img-13.png" alt="">
-                <img class="leaves-3" src="../assets/img/h-2-slider-img-14.png" alt="">
-               
-                <img class="leaves-4" src="../assets/img/h-2-slider-img-17.png" alt="">
-                <img class="leaves-5" src="../assets/img/h-2-slider-img-18.png" alt="">
-                <img class="leaves-6" src="../assets/img/short-slider-rev-1-img-2.png" alt="">
-                <img class="leaves-7" src="../assets/img/short-slider-rev-1-img-2.png" alt="">
+                <img :class="imgHeroLeaves[0].class" :src=imgHeroLeaves[0].img alt="">
+                <img :class="imgHeroLeaves[1].class" :src=imgHeroLeaves[1].img alt="">
+                <img :class="imgHeroLeaves[2].class" :src=imgHeroLeaves[2].img alt="">
+                <img :class="imgHeroLeaves[3].class" :src=imgHeroLeaves[3].img alt="">
+                <img :class="imgHeroLeaves[4].class" :src=imgHeroLeaves[4].img alt="">
+                <img :class="imgHeroLeaves[5].class" :src=imgHeroLeaves[5].img alt="">
+                <img :class="imgHeroLeaves[6].class" :src=imgHeroLeaves[6].img alt="">
+
 
             </div>
 
