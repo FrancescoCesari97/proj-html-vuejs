@@ -4,6 +4,13 @@
 export default{
   data(){
     return{
+
+
+        imgOptionCard:[
+            '/assets/img/h-2-blog-img-1.jpg',
+            '/assets/img/h-2-blog-img-2.jpg',
+            '/assets/img/h-2-blog-img-3.jpg',
+        ]
      
     };
 
@@ -23,8 +30,8 @@ export default{
 <template>
 
     <div class="container ">
-        <div class="card">
-            <img src="../assets/img/h-2-blog-img-1.jpg" alt="">
+        <div v-for="img in imgOptionCard" class="card">
+            <img :src="img" alt="">
             <h5 class="p-2">This way, loves: a detailed guide throgh new design</h5>
             <p class="p-2">By Emily Fields</p>
             <div class="targ text-center">
@@ -32,7 +39,7 @@ export default{
                 <p class="anno p-2">May '19</p>
             </div>
         </div>
-        <div class="card">
+        <!-- <div class="card">
             <img src="../assets/img/h-2-blog-img-2.jpg" alt="">
             <h5 class="p-2">This way, loves: a detailed guide throgh new design</h5>
             <p class="p-2">By Emily Fields</p>
@@ -49,7 +56,7 @@ export default{
                 <p class="giorno p-2">07</p>
                 <p class="anno p-2">May '19</p>
             </div>
-        </div>
+        </div> -->
         
     </div>
 
