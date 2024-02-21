@@ -138,6 +138,7 @@ export default{
     border: 0;
     width: calc(100% / 3);
     position: relative;
+    overflow: hidden;
 
    
 

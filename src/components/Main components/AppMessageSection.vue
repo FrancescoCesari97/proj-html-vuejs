@@ -57,6 +57,7 @@ export default{
             h2{
                 font-size: 2.5rem;
                 padding-top: 50px;
+                font-weight: 300;
 
                 span{
                     font-family: "Playball" ;

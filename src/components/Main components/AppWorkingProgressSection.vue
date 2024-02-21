@@ -26,11 +26,11 @@ export default{
 
     <h3 class="text-center"> Working <span>process</span></h3>
     
-    <div class="linea-rossa">
-
-        <img src="../assets/svg/svg-3.svg" alt="">
-    </div>
     <div class="wrapper">
+        <div class="linea-rossa">
+    
+            <img src="../assets/svg/svg-3.svg" alt="">
+        </div>
         <div class="icona ">
             <div class="circle-icon  ">
                 <font-awesome-icon class="  icon" :icon="['far', 'lightbulb']" size="2xl" />
@@ -86,18 +86,12 @@ export default{
         position: relative;
 
 
-        .linea-rossa{
-                position:absolute;
-                left: 210px;
-                top: 180px;
-                z-index: 1;
-                width: 65%;
-                
-            }
+      
         
         h3{
             padding: 0 0 50px 0;
             font-size: 3rem;
+            font-weight: 300;
             span{
                 font-family: "Playball" ;
                 font-size: 4rem;
@@ -110,6 +104,14 @@ export default{
             display: flex;
             position: relative;
 
+            .linea-rossa{
+                position:absolute;
+                left: 190px;
+                top: 0px;
+                z-index: 1;
+                width: 68%;
+                
+            }
 
             .icona{
                 border: 0;
@@ -117,10 +119,11 @@ export default{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                z-index: 0;
+                z-index: 1;
             
                 h4{
                     font-size: 1rem;
+                    
                 }
 
                 p{
