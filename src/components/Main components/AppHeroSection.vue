@@ -201,7 +201,7 @@ export default{
     },
 
      computed:{
-      activeParagra() {
+      activeParagrah() {
       return this.Paragraphs[this.activeParagraph];
     },
     },
@@ -227,7 +227,18 @@ export default{
     changeSlide(index) {
 
       this.activeParagraph = index;
-    }
+    },
+
+    scrollTop() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth' 
+          });
+    },
+
+
+
+
 
     } 
 
@@ -306,6 +317,10 @@ export default{
     </div>
 
 
+    <div @click="scrollTop" class="arrow-top ">
+
+        <img  src="/assets/svg/svg-8.svg" alt="">
+    </div>
     
  
 
@@ -507,7 +522,17 @@ export default{
     cursor: pointer;
 }
 
+.arrow-top{
 
+    background-color: #c0e1cf;
+    position:fixed;
+    width: 20px;
+    right: 30px;
+    z-index: 1;
+    padding: 5px ;
+    box-shadow: 1px 1px 8px rgb(85, 131, 85);
+    cursor: pointer;
+}
 
 
 </style>
